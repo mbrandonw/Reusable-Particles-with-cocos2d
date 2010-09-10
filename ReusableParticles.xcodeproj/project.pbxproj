@@ -96,6 +96,8 @@
 		A7752B4A123ACEA700EADB93 /* FontManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A7752B42123ACEA700EADB93 /* FontManager.m */; };
 		A7752B4B123ACEA700EADB93 /* ZAttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = A7752B44123ACEA700EADB93 /* ZAttributedString.m */; };
 		A7752B4C123ACEA700EADB93 /* ZFont.m in Sources */ = {isa = PBXBuildFile; fileRef = A7752B47123ACEA700EADB93 /* ZFont.m */; };
+		A7752B64123ACFCF00EADB93 /* ParticlesScene.m in Sources */ = {isa = PBXBuildFile; fileRef = A7752B63123ACFCF00EADB93 /* ParticlesScene.m */; };
+		A7752BA1123AD0F500EADB93 /* fps_images.png in Resources */ = {isa = PBXBuildFile; fileRef = A7752BA0123AD0F500EADB93 /* fps_images.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -285,6 +287,9 @@
 		A7752B45123ACEA700EADB93 /* ZAttributedStringPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZAttributedStringPrivate.h; sourceTree = "<group>"; };
 		A7752B46123ACEA700EADB93 /* ZFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFont.h; sourceTree = "<group>"; };
 		A7752B47123ACEA700EADB93 /* ZFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFont.m; sourceTree = "<group>"; };
+		A7752B62123ACFCF00EADB93 /* ParticlesScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticlesScene.h; sourceTree = "<group>"; };
+		A7752B63123ACFCF00EADB93 /* ParticlesScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParticlesScene.m; sourceTree = "<group>"; };
+		A7752BA0123AD0F500EADB93 /* fps_images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fps_images.png; path = "cocos2d-iphone/templates/cocos2d_chipmunk_app/Resources/fps_images.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -309,6 +314,8 @@
 			children = (
 				1D3623240D0F684500981E51 /* ReusableParticlesAppDelegate.h */,
 				1D3623250D0F684500981E51 /* ReusableParticlesAppDelegate.m */,
+				A7752B62123ACFCF00EADB93 /* ParticlesScene.h */,
+				A7752B63123ACFCF00EADB93 /* ParticlesScene.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -347,6 +354,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A7752BA0123AD0F500EADB93 /* fps_images.png */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* ReusableParticles-Info.plist */,
 			);
@@ -637,6 +645,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				A7752BA1123AD0F500EADB93 /* fps_images.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -729,6 +738,7 @@
 				A7752B4A123ACEA700EADB93 /* FontManager.m in Sources */,
 				A7752B4B123ACEA700EADB93 /* ZAttributedString.m in Sources */,
 				A7752B4C123ACEA700EADB93 /* ZFont.m in Sources */,
+				A7752B64123ACFCF00EADB93 /* ParticlesScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
