@@ -11,6 +11,7 @@
 
 @interface ParticlesScene : CCLayer {
 
+	ARCH_OPTIMAL_PARTICLE_SYSTEM *explosion;
 }
 
 +(CCScene*) scene;

@@ -99,6 +99,8 @@
 		A7752B64123ACFCF00EADB93 /* ParticlesScene.m in Sources */ = {isa = PBXBuildFile; fileRef = A7752B63123ACFCF00EADB93 /* ParticlesScene.m */; };
 		A7752BA1123AD0F500EADB93 /* fps_images.png in Resources */ = {isa = PBXBuildFile; fileRef = A7752BA0123AD0F500EADB93 /* fps_images.png */; };
 		A7752C21123AD89A00EADB93 /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = A7752C20123AD89A00EADB93 /* fire.png */; };
+		A7752C40123AD9E500EADB93 /* ExplosionParticles.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7752C3F123AD9E500EADB93 /* ExplosionParticles.plist */; };
+		A7752CDA123AE3CF00EADB93 /* libSystem.B.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A7752CD9123AE3CF00EADB93 /* libSystem.B.dylib */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -292,6 +294,8 @@
 		A7752B63123ACFCF00EADB93 /* ParticlesScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParticlesScene.m; sourceTree = "<group>"; };
 		A7752BA0123AD0F500EADB93 /* fps_images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fps_images.png; path = "cocos2d-iphone/templates/cocos2d_chipmunk_app/Resources/fps_images.png"; sourceTree = "<group>"; };
 		A7752C20123AD89A00EADB93 /* fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fire.png; path = ../github/Resources/Images/fire.png; sourceTree = SOURCE_ROOT; };
+		A7752C3F123AD9E500EADB93 /* ExplosionParticles.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ExplosionParticles.plist; sourceTree = "<group>"; };
+		A7752CD9123AE3CF00EADB93 /* libSystem.B.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libSystem.B.dylib; path = usr/lib/libSystem.B.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -305,6 +309,7 @@
 				A7752B2B123ACE7200EADB93 /* OpenGLES.framework in Frameworks */,
 				A7752B2F123ACE7900EADB93 /* QuartzCore.framework in Frameworks */,
 				A7752B33123ACE8300EADB93 /* libz.dylib in Frameworks */,
+				A7752CDA123AE3CF00EADB93 /* libSystem.B.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +345,7 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				A7752CD9123AE3CF00EADB93 /* libSystem.B.dylib */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -356,6 +362,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A7752C3F123AD9E500EADB93 /* ExplosionParticles.plist */,
 				A7752C20123AD89A00EADB93 /* fire.png */,
 				A7752BA0123AD0F500EADB93 /* fps_images.png */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
@@ -650,6 +657,7 @@
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				A7752BA1123AD0F500EADB93 /* fps_images.png in Resources */,
 				A7752C21123AD89A00EADB93 /* fire.png in Resources */,
+				A7752C40123AD9E500EADB93 /* ExplosionParticles.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

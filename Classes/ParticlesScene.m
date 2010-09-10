@@ -25,8 +25,9 @@
 	
 	self.isTouchEnabled = YES;
 	
-	CCParticleExplosion *explosion = [[CCParticleExplosion alloc] initWithTotalParticles:100];
-	explosion.autoRemoveOnFinish = YES;
+	explosion = [[ARCH_OPTIMAL_PARTICLE_SYSTEM alloc] initWithFile:@"ExplosionParticles.plist"];
+	explosion.reuseParticles = YES;
+	explosion.position = ccp(0.0f,0.0f);
 	[self addChild:explosion];
 	[explosion release];
 	
@@ -34,7 +35,10 @@
 }
 
 - (void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-	NSLog(@"!?!?");
+	
+	UITouch *touch = [touches anyObject];
+	explosion.centerOfGravity = [[CCDirector sharedDirector] convertToGL:[touch locationInView:[touch view]]];
+	[explosion spawnParticles:100];
 }
 
 @end
