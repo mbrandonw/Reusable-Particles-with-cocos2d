@@ -8,6 +8,7 @@
 
 #import "ReusableParticlesAppDelegate.h"
 #import "ParticlesScene.h"
+#import "cocos2d.h"
 
 @implementation ReusableParticlesAppDelegate
 

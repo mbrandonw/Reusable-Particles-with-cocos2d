@@ -19,4 +19,22 @@
 	return scene;
 }
 
+-(id) init {
+	if (! (self = [super init]))
+		return nil;
+	
+	self.isTouchEnabled = YES;
+	
+	CCParticleExplosion *explosion = [[CCParticleExplosion alloc] initWithTotalParticles:100];
+	explosion.autoRemoveOnFinish = YES;
+	[self addChild:explosion];
+	[explosion release];
+	
+	return self;
+}
+
+- (void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+	NSLog(@"!?!?");
+}
+
 @end
