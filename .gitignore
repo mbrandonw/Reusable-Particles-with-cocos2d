@@ -1,0 +1,21 @@
+# xcode noise
+*.mode1v3
+*.pbxuser
+*.perspective 
+*.perspectivev3
+*.pyc 
+*~.nib/
+build/*
+
+# old skool
+.svn
+
+# osx noise
+.DS_Store
+profile
+
+# image source files from GIMP
+*.xcf
+
+#mergetool merge saves
+*.orig
