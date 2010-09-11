@@ -12,6 +12,7 @@
 @interface ParticlesScene : CCLayer {
 
 	ARCH_OPTIMAL_PARTICLE_SYSTEM *explosion;
+	NSArray *explosionDictionaries;
 }
 
 +(CCScene*) scene;

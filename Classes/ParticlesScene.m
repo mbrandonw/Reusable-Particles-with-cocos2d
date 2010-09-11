@@ -23,6 +23,12 @@
 	if (! (self = [super init]))
 		return nil;
 	
+	explosionDictionaries = [[NSArray alloc] initWithObjects:
+							 [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"ExplosionParticles1" ofType:@"plist"]],
+							 [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"ExplosionParticles2" ofType:@"plist"]],
+							 [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"ExplosionParticles3" ofType:@"plist"]],
+							 nil];
+	
 	self.isTouchEnabled = YES;
 	
 	explosion = [[ARCH_OPTIMAL_PARTICLE_SYSTEM alloc] initWithFile:@"ExplosionParticles.plist"];
@@ -35,6 +41,8 @@
 }
 
 - (void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+	
+	[explosion setAttributesWithDictionary:[explosionDictionaries objectAtIndex:(arc4random()%3)] loadTexture:NO];
 	
 	UITouch *touch = [touches anyObject];
 	explosion.centerOfGravity = [[CCDirector sharedDirector] convertToGL:[touch locationInView:[touch view]]];
