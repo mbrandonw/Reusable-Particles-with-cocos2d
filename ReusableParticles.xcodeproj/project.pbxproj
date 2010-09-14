@@ -98,8 +98,8 @@
 		A7752B4C123ACEA700EADB93 /* ZFont.m in Sources */ = {isa = PBXBuildFile; fileRef = A7752B47123ACEA700EADB93 /* ZFont.m */; };
 		A7752B64123ACFCF00EADB93 /* ParticlesScene.m in Sources */ = {isa = PBXBuildFile; fileRef = A7752B63123ACFCF00EADB93 /* ParticlesScene.m */; };
 		A7752BA1123AD0F500EADB93 /* fps_images.png in Resources */ = {isa = PBXBuildFile; fileRef = A7752BA0123AD0F500EADB93 /* fps_images.png */; };
-		A7752C21123AD89A00EADB93 /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = A7752C20123AD89A00EADB93 /* fire.png */; };
 		A7752CDA123AE3CF00EADB93 /* libSystem.B.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A7752CD9123AE3CF00EADB93 /* libSystem.B.dylib */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A797472212402E36001F804C /* README in Resources */ = {isa = PBXBuildFile; fileRef = A797472112402E36001F804C /* README */; };
 		A7D55A65123BE0B8002CCE1A /* ExplosionParticles1.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7D55A62123BE0B8002CCE1A /* ExplosionParticles1.plist */; };
 		A7D55A66123BE0B8002CCE1A /* ExplosionParticles2.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7D55A63123BE0B8002CCE1A /* ExplosionParticles2.plist */; };
 		A7D55A67123BE0B8002CCE1A /* ExplosionParticles3.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7D55A64123BE0B8002CCE1A /* ExplosionParticles3.plist */; };
@@ -295,8 +295,8 @@
 		A7752B62123ACFCF00EADB93 /* ParticlesScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticlesScene.h; sourceTree = "<group>"; };
 		A7752B63123ACFCF00EADB93 /* ParticlesScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParticlesScene.m; sourceTree = "<group>"; };
 		A7752BA0123AD0F500EADB93 /* fps_images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fps_images.png; path = "cocos2d-iphone/templates/cocos2d_chipmunk_app/Resources/fps_images.png"; sourceTree = "<group>"; };
-		A7752C20123AD89A00EADB93 /* fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fire.png; path = ../github/Resources/Images/fire.png; sourceTree = SOURCE_ROOT; };
 		A7752CD9123AE3CF00EADB93 /* libSystem.B.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libSystem.B.dylib; path = usr/lib/libSystem.B.dylib; sourceTree = SDKROOT; };
+		A797472112402E36001F804C /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		A7D55A62123BE0B8002CCE1A /* ExplosionParticles1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ExplosionParticles1.plist; sourceTree = "<group>"; };
 		A7D55A63123BE0B8002CCE1A /* ExplosionParticles2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ExplosionParticles2.plist; sourceTree = "<group>"; };
 		A7D55A64123BE0B8002CCE1A /* ExplosionParticles3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ExplosionParticles3.plist; sourceTree = "<group>"; };
@@ -342,6 +342,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				A797472112402E36001F804C /* README */,
 				A7752B3C123ACEA700EADB93 /* FontLabel */,
 				A7752A37123ACE6300EADB93 /* cocos2d */,
 				080E96DDFE201D6D7F000001 /* Classes */,
@@ -369,7 +370,6 @@
 				A7D55A62123BE0B8002CCE1A /* ExplosionParticles1.plist */,
 				A7D55A63123BE0B8002CCE1A /* ExplosionParticles2.plist */,
 				A7D55A64123BE0B8002CCE1A /* ExplosionParticles3.plist */,
-				A7752C20123AD89A00EADB93 /* fire.png */,
 				A7752BA0123AD0F500EADB93 /* fps_images.png */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* ReusableParticles-Info.plist */,
@@ -662,10 +662,10 @@
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				A7752BA1123AD0F500EADB93 /* fps_images.png in Resources */,
-				A7752C21123AD89A00EADB93 /* fire.png in Resources */,
 				A7D55A65123BE0B8002CCE1A /* ExplosionParticles1.plist in Resources */,
 				A7D55A66123BE0B8002CCE1A /* ExplosionParticles2.plist in Resources */,
 				A7D55A67123BE0B8002CCE1A /* ExplosionParticles3.plist in Resources */,
+				A797472212402E36001F804C /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
