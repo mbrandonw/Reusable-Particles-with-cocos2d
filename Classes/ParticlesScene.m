@@ -31,7 +31,7 @@
 	
 	self.isTouchEnabled = YES;
 	
-	explosion = [[ARCH_OPTIMAL_PARTICLE_SYSTEM alloc] initWithTotalParticles:100];
+	explosion = [[ARCH_OPTIMAL_PARTICLE_SYSTEM alloc] initWithTotalParticles:300];
 	explosion.reuseParticles = YES;
 	explosion.position = ccp(0.0f,0.0f);
 	[self addChild:explosion];
