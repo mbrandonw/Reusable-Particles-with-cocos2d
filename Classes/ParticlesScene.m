@@ -32,13 +32,26 @@
 	
 	self.isTouchEnabled = YES;
 	
-	// create a reusable particle system
-	explosion = [[ARCH_OPTIMAL_PARTICLE_SYSTEM alloc] initWithTotalParticles:300];
+	// create one big reusable particle system
+	explosion = [[ARCH_OPTIMAL_PARTICLE_SYSTEM alloc] initWithTotalParticles:500];
 	explosion.reuseParticles = YES;
 	explosion.position = ccp(0.0f,0.0f);
 	[self addChild:explosion];
 	
+	[self scheduleUpdate];
+	
 	return self;
+}
+
+-(void) update:(ccTime)dt {
+	
+	explosion.centerOfGravity = ccp(100.0f, 100.0f);
+	[explosion setAttributesWithDictionary:[explosionDictionaries lastObject] loadTexture:NO];
+	[explosion spawnParticles:3];
+	
+	explosion.centerOfGravity = ccp(400.0f, 250.0f);
+	[explosion setAttributesWithDictionary:[explosionDictionaries objectAtIndex:0] loadTexture:NO];
+	[explosion spawnParticles:3];
 }
 
 - (void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
