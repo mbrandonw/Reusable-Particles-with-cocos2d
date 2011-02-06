@@ -100,6 +100,8 @@
 		A7752BA1123AD0F500EADB93 /* fps_images.png in Resources */ = {isa = PBXBuildFile; fileRef = A7752BA0123AD0F500EADB93 /* fps_images.png */; };
 		A7752CDA123AE3CF00EADB93 /* libSystem.B.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A7752CD9123AE3CF00EADB93 /* libSystem.B.dylib */; settings = {ATTRIBUTES = (Weak, ); }; };
 		A797472212402E36001F804C /* README in Resources */ = {isa = PBXBuildFile; fileRef = A797472112402E36001F804C /* README */; };
+		A7B24A7212FE2BB4003AC55F /* CCAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B24A6F12FE2BB4003AC55F /* CCAnimation.m */; };
+		A7B24A7312FE2BB4003AC55F /* CCAnimationCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B24A7112FE2BB4003AC55F /* CCAnimationCache.m */; };
 		A7D55A65123BE0B8002CCE1A /* ExplosionParticles1.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7D55A62123BE0B8002CCE1A /* ExplosionParticles1.plist */; };
 		A7D55A66123BE0B8002CCE1A /* ExplosionParticles2.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7D55A63123BE0B8002CCE1A /* ExplosionParticles2.plist */; };
 		A7D55A67123BE0B8002CCE1A /* ExplosionParticles3.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7D55A64123BE0B8002CCE1A /* ExplosionParticles3.plist */; };
@@ -297,6 +299,10 @@
 		A7752BA0123AD0F500EADB93 /* fps_images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fps_images.png; path = "cocos2d-iphone/templates/cocos2d_chipmunk_app/Resources/fps_images.png"; sourceTree = "<group>"; };
 		A7752CD9123AE3CF00EADB93 /* libSystem.B.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libSystem.B.dylib; path = usr/lib/libSystem.B.dylib; sourceTree = SDKROOT; };
 		A797472112402E36001F804C /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		A7B24A6E12FE2BB4003AC55F /* CCAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAnimation.h; sourceTree = "<group>"; };
+		A7B24A6F12FE2BB4003AC55F /* CCAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCAnimation.m; sourceTree = "<group>"; };
+		A7B24A7012FE2BB4003AC55F /* CCAnimationCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAnimationCache.h; sourceTree = "<group>"; };
+		A7B24A7112FE2BB4003AC55F /* CCAnimationCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCAnimationCache.m; sourceTree = "<group>"; };
 		A7D55A62123BE0B8002CCE1A /* ExplosionParticles1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ExplosionParticles1.plist; sourceTree = "<group>"; };
 		A7D55A63123BE0B8002CCE1A /* ExplosionParticles2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ExplosionParticles2.plist; sourceTree = "<group>"; };
 		A7D55A64123BE0B8002CCE1A /* ExplosionParticles3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ExplosionParticles3.plist; sourceTree = "<group>"; };
@@ -417,6 +423,10 @@
 				A7752A4D123ACE6300EADB93 /* CCActionTiledGrid.m */,
 				A7752A4E123ACE6300EADB93 /* CCActionTween.h */,
 				A7752A4F123ACE6300EADB93 /* CCActionTween.m */,
+				A7B24A6E12FE2BB4003AC55F /* CCAnimation.h */,
+				A7B24A6F12FE2BB4003AC55F /* CCAnimation.m */,
+				A7B24A7012FE2BB4003AC55F /* CCAnimationCache.h */,
+				A7B24A7112FE2BB4003AC55F /* CCAnimationCache.m */,
 				A7752A50123ACE6300EADB93 /* CCAtlasNode.h */,
 				A7752A51123ACE6300EADB93 /* CCAtlasNode.m */,
 				A7752A52123ACE6300EADB93 /* CCBlockSupport.h */,
@@ -759,6 +769,8 @@
 				A7752B4B123ACEA700EADB93 /* ZAttributedString.m in Sources */,
 				A7752B4C123ACEA700EADB93 /* ZFont.m in Sources */,
 				A7752B64123ACFCF00EADB93 /* ParticlesScene.m in Sources */,
+				A7B24A7212FE2BB4003AC55F /* CCAnimation.m in Sources */,
+				A7B24A7312FE2BB4003AC55F /* CCAnimationCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

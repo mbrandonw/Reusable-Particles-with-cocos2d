@@ -45,11 +45,11 @@
 
 -(void) update:(ccTime)dt {
 	
-	explosion.centerOfGravity = ccp(100.0f, 100.0f);
+	explosion.sourcePosition = ccp(100.0f, 100.0f);
 	[explosion setAttributesWithDictionary:[explosionDictionaries lastObject] loadTexture:NO];
 	[explosion spawnParticles:3];
 	
-	explosion.centerOfGravity = ccp(400.0f, 250.0f);
+	explosion.sourcePosition = ccp(400.0f, 250.0f);
 	[explosion setAttributesWithDictionary:[explosionDictionaries objectAtIndex:0] loadTexture:NO];
 	[explosion spawnParticles:3];
 }
@@ -59,13 +59,14 @@
 	static int i = 0;
 	
 	// change the parameters of the particle system using one of the preloaded dictionaries
-	[explosion setAttributesWithDictionary:[explosionDictionaries objectAtIndex:(i++ % [explosionDictionaries count])] loadTexture:NO];
+	[explosion setAttributesWithDictionary:[explosionDictionaries objectAtIndex:(i++ % [explosionDictionaries count])] 
+							   loadTexture:NO];
 	
 	// start an explosion for each touch
 	for (UITouch *touch in touches)
 	{
 		CGPoint p = [[CCDirector sharedDirector] convertToGL:[touch locationInView:[touch view]]];
-		explosion.centerOfGravity = p;
+		explosion.sourcePosition = p;
 		[explosion spawnParticles:50];
 	}
 }
